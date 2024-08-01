@@ -37,12 +37,15 @@ def pitch_to_hz(pitch):
     return 440 * math.exp((pitch - 69) * math.log(2) / 12)
 
 
-def create_hz_ranges(count: int, hz_min: int, hz_max: int, pitch_overlap: float = 0.0):
+def create_hz_ranges(count: int, hz_min: int, hz_max: int, pitch_overlap: float = 0.0, skip: int = 0):
     pitch_min = hz_to_pitch(hz_min)
     pitch_max = hz_to_pitch(hz_max)
     pitch_interval = (pitch_max - pitch_min) / count
 
-    for i in range(count):
+    for i in range(count + skip):
+        if i < skip:
+            continue
+
         start = pitch_min + pitch_interval * i
         stop = pitch_min + pitch_interval * (i + 1)
 
@@ -57,11 +60,13 @@ def create_hz_ranges(count: int, hz_min: int, hz_max: int, pitch_overlap: float 
         yield start_hz, stop_hz
 
 
-def create_visualizer_cubes(count, bar_ratio: float, hz_min, hz_max, scale, pitch_overlap=0.0):
+def create_visualizer_cubes(count, bar_ratio: float, hz_min, hz_max, pitch_overlap=0.0):
     if count > 100:
         raise NotImplementedError("not support over 100 because i need to clear cubes every time you run this script")
 
     root_empty = get_or_create_empty("Visualizer Root")
+
+    white_material = bpy.data.materials.get("White")
 
     def generate_cube_name(i):
         return f"Visualizer Bar {i + 1}"
@@ -75,7 +80,7 @@ def create_visualizer_cubes(count, bar_ratio: float, hz_min, hz_max, scale, pitc
         delete_object_if_exists(generate_cube_name(i))
 
     # create cubes
-    for i, (start, stop) in enumerate(create_hz_ranges(count, hz_min, hz_max, pitch_overlap=pitch_overlap)):
+    for i, (start, stop) in enumerate(create_hz_ranges(count, hz_min, hz_max, pitch_overlap=pitch_overlap, skip=5)):
         cube_name = generate_cube_name(i)
         delete_object_if_exists(cube_name)
 
@@ -86,8 +91,9 @@ def create_visualizer_cubes(count, bar_ratio: float, hz_min, hz_max, scale, pitc
         )
         bpy.context.object.name = cube_name
         bpy.context.object.parent = root_empty
+        bpy.context.object.data.materials.append(white_material)
 
-        driver_expression = f"audvis({start}, {stop}) * {i ** 2.2} / {scale}"
+        driver_expression = f"audvis({start}, {stop}) * {stop - start} / {1 + i * 0.04} / 1000 / 1.2"
 
         driver = bpy.context.object.driver_add("location", 2)
         driver.driver.type = 'SCRIPTED'
@@ -98,11 +104,11 @@ def create_visualizer_cubes(count, bar_ratio: float, hz_min, hz_max, scale, pitc
 
 
 COUNT = 64
-SCALE = 100000
 BAR_WIDTH = 0.75
 HZ_MIN = 20
 HZ_MAX = 5000
+#HZ_MAX = 250
 OVERLAP = 1.0
 
-create_visualizer_cubes(COUNT, BAR_WIDTH, HZ_MIN, HZ_MAX, SCALE, pitch_overlap=OVERLAP)
+create_visualizer_cubes(COUNT, BAR_WIDTH, HZ_MIN, HZ_MAX, pitch_overlap=OVERLAP)
 ```
