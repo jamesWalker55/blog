@@ -5,6 +5,6 @@
 # title = "Home Page"
 +++
 
-Hello! Not sure what exactly to put on this blog yet - please check the below links in the meantime:
+Hello! Not sure what exactly to put on this blog yet - please check the links below in the meantime:
 
 - [My GitHub](https://github.com/jamesWalker55)
