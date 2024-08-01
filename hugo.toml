@@ -4,7 +4,7 @@ theme = 'hugo-bearblog'
 
 # Base URL used when generating links to your pages
 # Set to the URL for your site
-baseURL = "https://example.com"
+baseURL = "https://jameswalker55.github.io/blog/"
 
 # Basic metadata configuration for your blog.
 title = "jamesWalker55's Blog"
