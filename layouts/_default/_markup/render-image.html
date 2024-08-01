@@ -1,0 +1,5 @@
+{{/* Use the alt text as title text */}}
+<img src="{{ .Destination | safeURL }}"
+  {{- with .Text }} title="{{ . | transform.HTMLUnescape }}"{{ end -}}
+>
+{{- /* chomp trailing newline */ -}}
