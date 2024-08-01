@@ -1,5 +1,7 @@
+SERVE_PORT := "54244"
+
 serve:
-    hugo server
+    hugo server --port "{{SERVE_PORT}}"
 
 # Usage:
 # just new hello-world
