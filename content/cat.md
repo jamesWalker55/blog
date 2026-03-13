@@ -3,4 +3,4 @@ title = "Cat"
 menu = "main"
 +++
 
-![Cat](/blog/images/cat.webp)
+![Cat](/blog/cat.webp)
