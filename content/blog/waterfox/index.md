@@ -26,9 +26,9 @@ I'd thought sending tabs to my phone was a Firefox proprietary feature, but here
 
 Firefox's sync features all work too, I synced my bookmarks and everything perfectly fine.
 
-It comes with a built-in ad blocker. I'm not sure if it's based on uBlock origin, but it accepts the same filter syntax as uBlock origin and I had no problems copying my existing filters to Waterfox.
+~~It comes with a built-in ad blocker. I'm not sure if it's based on uBlock origin, but it accepts the same filter syntax as uBlock origin and I had no problems copying my existing filters to Waterfox.~~
 
-![Built-in uBlock origin? Not sure but it works so far.](./filter-settings.png)
+Waterfox has a built-in ad blocker, but I've decided to use uBlock origin anyway. The built-in blocker has no way to "select" an element on the page and remove it, I have to manually write a filter following the syntax, which is quite annoying. I also want to be up-to-date on adblock via the official addon rather than through Waterfox's browser updates.
 
 However, some UI problems still got inherited from Firefox. I still needed to create a `chrome/userChrome.css` to tweak the UI, but it's fairly few and only has targeted changes. Here is my entire `userChrome.css` file:
 
