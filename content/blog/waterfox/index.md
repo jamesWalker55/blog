@@ -16,6 +16,8 @@ I have no idea what is causing this. Some initial searching suggests this is rel
 
 I don't know how to fix this, so I'm switching back to FireFox.
 
+To avoid dealing with FireFox's rapid UI changes and AI features, I am now using the **ESR** release of FireFox. The benefit is that all the popular FireFox themes are unbroken and working well on ESR. I've looked through FireFox's changelog since 140.0 and honestly there are no useful features since then so I'm happy with ESR.
+
 Ignore the rest of my original post below.
 
 # Original post
