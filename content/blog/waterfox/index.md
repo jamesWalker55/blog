@@ -1,8 +1,24 @@
 +++
-title = "Let's switch to Waterfox"
+title = "Let's (not) switch to Waterfox"
 date = "2026-06-10T17:47:08+08:00"
 tags = ["technology","ui",]
 +++
+
+# Update: 2026-06-27
+
+Not all is well with WaterFox.
+
+- My tabs are being shuffled randomly
+  - I mean it literally. Imagine I have tabs 1, 2, 3, 4, 5, 6. After a while, it somehow becomes tab 3, 4, 1, 5, 2, 6 without any input from me.
+- When I close my current tab, I occasionally jump to a completely random tab (instead of the previous tab)
+
+I have no idea what is causing this. Some initial searching suggests this is related to WaterFox force-enabling tree tabs regardless of my settings. I use horizontal tabs, not vertical tabs.
+
+I don't know how to fix this, so I'm switching back to FireFox.
+
+Ignore the rest of my original post below.
+
+# Original post
 
 I've been fed up with Firefox ever since they added yet more padding to their UI, and now they seem to be more interested drawing furry bait than making sensible UI decisions.
 
