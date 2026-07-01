@@ -26,6 +26,15 @@ I've been fed up with Firefox ever since they added yet more padding to their UI
 
 Firefox had removed [basic connection error codes](https://www.reddit.com/r/firefox/comments/1s4zoj3/new_firefox_doesnt_show_connection_error_codes/) (fixed now), [make tabs unnecessarily animated which I absolutely despise](https://connect.mozilla.org/t5/discussions/the-new-tab-mute-button/m-p/89531) (still not fixed), pushed half-baked and questionable experiments like the AI chat sidebars, AI link previews, and many more I can't remember right now.
 
+Update: I've remembered a few more annoyances so I'll include them here:
+
+- [They forced new links (e.g. from Discord) to open on the current virtual desktop](https://old.reddit.com/r/firefox/comments/1o87nym/version_144_virtual_desktop_experience_help/)
+- [On middle mouse click, FireFox now deselects any selection you had](https://old.reddit.com/r/firefox/comments/oimhfp/a_very_subtle_annoying_change_was_done_in_v89_but/)
+- [They removed the old download panel, which let you open files temporarily (and called it "improvements_to_download_panel")](https://old.reddit.com/r/firefox/comments/ugw733/improvements_to_download_panel_challenges/)
+- [FireFox shows mobile selection handles on desktop for no reason (I don't even have a touch screen)](https://www.reddit.com/r/firefox/comments/12vluzv/firefox_on_desktop_is_showing_selection_handles)
+- [Tab groups](https://old.reddit.com/r/firefox/comments/1jvln5l/how_to_disable_tab_grouping/)
+- [Can't remove FireFox logo on new tab page](https://old.reddit.com/r/firefox/comments/1tkmr8g/so_i_cannot_disable_the_firefox_logo_anymore/)
+
 Granted a few of these were reversed, but I feel like a beta tester for some company chasing trends, playing whack-a-mole with looking up `about:config` settings every update, until they eventually deprecate and remove those settings and say "well the settings have been deprecated for years now, you weren't supposed to use them". We all know that compact mode will be removed by Firefox at some point.
 
 With the latest Firefox update, [black7375's Firefox-UI-Fix theme](https://github.com/black7375/Firefox-UI-Fix) is broken again, and their repo seems to be basically unmaintained. So I decided to give Waterfox a go.
