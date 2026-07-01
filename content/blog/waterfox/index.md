@@ -31,6 +31,7 @@ Update: I've remembered a few more annoyances so I'll include them here:
 - [They forced new links (e.g. from Discord) to open on the current virtual desktop](https://old.reddit.com/r/firefox/comments/1o87nym/version_144_virtual_desktop_experience_help/)
 - [On middle mouse click, FireFox now deselects any selection you had](https://old.reddit.com/r/firefox/comments/oimhfp/a_very_subtle_annoying_change_was_done_in_v89_but/)
 - [They removed the old download panel, which let you open files temporarily (and called it "improvements_to_download_panel")](https://old.reddit.com/r/firefox/comments/ugw733/improvements_to_download_panel_challenges/)
+- [Choosing to "open" a file downloads the file in your Download folder instead of a temp folder](https://old.reddit.com/r/firefox/comments/1j1tgqi/firefox_no_longer_saves_download_to_a_temp_folder/)
 - [FireFox shows mobile selection handles on desktop for no reason (I don't even have a touch screen)](https://www.reddit.com/r/firefox/comments/12vluzv/firefox_on_desktop_is_showing_selection_handles)
 - [Tab groups](https://old.reddit.com/r/firefox/comments/1jvln5l/how_to_disable_tab_grouping/)
 - [Can't remove FireFox logo on new tab page](https://old.reddit.com/r/firefox/comments/1tkmr8g/so_i_cannot_disable_the_firefox_logo_anymore/)
